@@ -1,0 +1,57 @@
+.preview {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    // min-width: 740px;
+    &__actor {
+        position: relative;
+        img {
+            border-radius: 20px;
+            width: 100%;
+            aspect-ratio: 700 / 394;
+            object-fit: cover;
+        }
+    }
+
+    &__label {
+        padding: 6px 20px;
+        border-radius: 6px;
+        background-color: #ebf2ff;
+        position: absolute;
+        bottom: 27px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 15px;
+        font-weight: 500;
+        color: #3860ad;
+    }
+
+    &__info {
+        margin: 18px 0 0;
+        padding: 19px 34px 13px 30px;
+        border-radius: 20px;
+        background-color: #fff;
+
+        font-size: 16px;
+        line-height: 1.63;
+        color: #999;
+        min-height: 147px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .count_char {
+        opacity: 0.3;
+        font-size: 10px;
+        text-align: right;
+        color: #999;
+        position: absolute;
+        bottom: 7px;
+        right: 17px;
+    }
+}

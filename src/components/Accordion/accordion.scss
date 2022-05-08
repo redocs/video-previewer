@@ -1,0 +1,39 @@
+.accordion {
+    &__item {
+            padding: 6px 14px 15px 15px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgb(0 0 0 / 10%);
+            i.icon__arrow::after, i.icon__arrow::before {
+                background-color: #999;
+            }
+
+        &.active {
+            padding: 16px 14px 15px 15px;
+            border-radius: 6px;
+            background-color: #ebf2ff;
+            border: none;
+            .accordion__title {
+                margin-bottom: 15px;
+            }
+            i::after, i::before {
+                background-color: #3860ad;
+            }
+            h2 {
+                color: #3860ad;
+            }
+        }
+    }
+    &__title {
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+        > h2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #999;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

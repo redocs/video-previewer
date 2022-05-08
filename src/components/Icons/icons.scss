@@ -1,0 +1,93 @@
+i.icon {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &__arrow {
+        &.down {
+            &::before,
+            &::after {
+                position: absolute;
+                width: 6px;
+                height: 1px;
+                background: #000;
+                content: "";
+                transform: rotateZ(45deg);
+                top: 5px;
+                left: 0;
+            }
+            &::after {
+                transform: rotateZ(-45deg);
+                left: 4px;
+            }
+        }
+        &.up {
+            &::before,
+            &::after {
+                position: absolute;
+                width: 6px;
+                height: 1px;
+                background: #000;
+                content: "";
+                transform: rotateZ(-45deg);
+                top: 5px;
+                left: 0;
+            }
+            &::after {
+                transform: rotateZ(45deg);
+                left: 4px;
+            }
+        }
+    }
+
+
+    &__menu {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        > span {
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 999em;
+            background: #000;
+            position: absolute;
+            top: 8px;
+            right: 2px;
+            
+            &::after, &::before {
+                content: "";
+                display: block;
+                width: 4px;
+                height: 4px;
+                border-radius: 999em;
+                background: #000;
+                position: absolute;
+                right: 6px;
+            }
+            
+            &::before {
+                right: 12px;
+            }
+        }
+    }
+}
+
+.iconMenu {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 20px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        background-color: #ebf2ff;
+    }
+}

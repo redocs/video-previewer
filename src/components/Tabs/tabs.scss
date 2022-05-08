@@ -1,0 +1,21 @@
+.tabs {
+    &__menu {
+        list-style-type: none;
+        margin: 0 0 29px;
+        padding: 0;
+        display: flex;
+        li {
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            color: #999;
+            margin-right: 30px;
+            &:last-child {
+                margin: 0;
+            }
+            &.active {
+                color: #3860ad;
+            }
+        }
+    }
+}

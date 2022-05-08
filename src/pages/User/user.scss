@@ -1,0 +1,130 @@
+.profile__container {
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    padding-top: 28px;
+}
+
+.profile {
+    margin-top: 45px;
+
+    &__image {
+        max-width: 100px;
+        margin-bottom: 43px;
+        position: relative;
+
+        img {
+            max-width: 100%;
+        }
+
+        &__edit {
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 999em;
+            background-color: #ebf2ff;
+            cursor: pointer;
+        }
+    }
+
+    &__form__submit {
+        margin-top: 20px;
+    }
+}
+
+.row {
+    display: flex;
+
+    > div {
+        margin-right: 40px;
+    }
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 32px;
+    margin-top: 44px;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #222;
+        margin: 0 0 20px;
+    }
+
+    &__single {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.active {
+            padding: 21px 24px 28px;
+            border-radius: 10px;
+            background-color: #46b13d;
+            color: #fff;
+            margin-top: -30px;
+            h2 {
+                color: #fff;
+            }
+            .plans__options {
+                color: #fff;
+            }
+        }
+    }
+
+    &__options {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+
+        li {
+            margin-bottom: 14px;
+        }
+
+        span {
+            margin-right: 12px;
+        }
+    }
+
+    &__price {
+        opacity: 0.96;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 11px;
+
+        span {
+            font-size: 17px;
+        }
+    }
+}
+
+.billing {
+    &__table {
+        td,
+        th {
+            text-align: left;
+            padding: 20px 40px 20px 0;
+            color: #222;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        th {
+            color: rgb(34 34 34 / 50%);
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #fff;
+        }
+    }
+}
