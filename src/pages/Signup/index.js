@@ -17,7 +17,7 @@ const Signup = props => {
             type: 'addUser',
             user: { email: e.target.elements.email.value, name: e.target.elements.fullname.value }
         });
-        navigate("/");
+        navigate("/create");
     }
 
     return <div className="page login">

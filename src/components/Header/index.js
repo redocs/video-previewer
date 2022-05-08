@@ -1,11 +1,13 @@
+
 import PropTypes from 'prop-types';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { IconMenu } from "../Icons";
 import logo from './logo.svg';
 import user from './user.png';
 
 const Header = props => {
 
+    let location = useLocation();
     const { menu } = props;
 
     return <header className="header">
@@ -17,7 +19,14 @@ const Header = props => {
                 key={item}
                 to={`/${item}`}
             >
-                {({ isActive }) => (<IconMenu name={item} svg={item} active={isActive} />)}
+                {({ isActive }) => {
+                    // console.log({ location, isActive });
+                    let activeMenu = isActive;
+                    if(location.pathname === '/' && item === 'create') {
+                        activeMenu = true;
+                    }
+                    return <IconMenu name={item} svg={item} active={activeMenu} />
+                }}
             </NavLink>)}
         </div>}
         {menu && <div className="header__user">

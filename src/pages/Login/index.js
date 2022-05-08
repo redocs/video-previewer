@@ -1,4 +1,5 @@
 import '../Pages.scss';
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Input from '../../components/Input';
 import { Button } from '../../components/Button';
@@ -8,6 +9,7 @@ import { useStateValue } from '../../state';
 const Login = props => {
 
     const [{ user }, dispatch] = useStateValue();
+    const navigate = useNavigate();
 
     const onLogin = (e) => {
         e.preventDefault();
@@ -15,6 +17,7 @@ const Login = props => {
             type: 'addUser',
             user: { email: e.target.elements.email.value }
         });
+        navigate("/create");
     }
 
     return <div className="page login">
