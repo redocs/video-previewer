@@ -10,6 +10,7 @@ import mock from "../../mock/mock";
 import { useState } from "react";
 import { useStateValue } from "../../state";
 import './user.scss';
+import ls from 'local-storage';
 
 // We use React.lazy for optimize performance
 // Maybe <Suspense> need a Skeleton Loading Component
@@ -32,6 +33,8 @@ const User = () => {
             type: 'addUser',
             user: {}
         });
+        ls.remove('user');
+        ls.remove('myVideos');
         navigate("/");
     }
 

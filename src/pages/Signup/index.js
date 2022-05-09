@@ -5,6 +5,7 @@ import Input from '../../components/Input';
 import { Button } from '../../components/Button';
 import Title from '../../components/Title';
 import { useStateValue } from '../../state';
+import ls from 'local-storage';
 
 const Signup = props => {
 
@@ -20,6 +21,7 @@ const Signup = props => {
             type: 'addUser',
             user: { email: e.target.elements.email.value, name: e.target.elements.fullname.value }
         });
+        ls.set('user', { email: e.target.elements.email.value, name: e.target.elements.fullname.value });
         navigate("/create");
     }
 

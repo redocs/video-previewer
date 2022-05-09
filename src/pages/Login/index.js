@@ -5,6 +5,7 @@ import Input from '../../components/Input';
 import { Button } from '../../components/Button';
 import Title from '../../components/Title';
 import { useStateValue } from '../../state';
+import ls from 'local-storage';
 
 const Login = () => {
 
@@ -20,6 +21,7 @@ const Login = () => {
             type: 'addUser',
             user: { email: e.target.elements.email.value }
         });
+        ls.set('user', { email: e.target.elements.email.value });
         navigate("/create");
     }
 

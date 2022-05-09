@@ -10,6 +10,7 @@ import { Grid } from '../../components/List';
 import { useStateValue } from '../../state';
 import mock from '../../mock/mock';
 import { Button } from '../../components/Button';
+import ls from 'local-storage';
 
 // We Use React.lazy for import the components that are called after a click on a Tab
 // We don't need to import List, Align, and Accordion before the are clicking this
@@ -93,6 +94,7 @@ const Create = () => {
             type: 'saveVideo',
             videos: [...videos, { ...title, ...previewer }]
         });
+        ls.set('myVideos', [...videos, { ...title, ...previewer }]);
         navigate("/saved");
     }
 

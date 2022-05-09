@@ -1,5 +1,8 @@
 // * appStore
 // We use this file for create all the State to share in the App
+import ls from 'local-storage';
+const myVideos = ls.get('myVideos');
+const userInfo = ls.get('user');
 
 export const appStore = () => {
   const initialState = {
@@ -19,8 +22,8 @@ export const appStore = () => {
     tabs: {
       active: 0
     },
-    videos: [],
-    user: {}
+    videos: myVideos || [],
+    user: userInfo || {}
   };
   const reducer = (state, action) => {
     switch (action.type) {
