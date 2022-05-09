@@ -52,7 +52,7 @@ const User = () => {
         </Title>
         <div className="page__container">
             <div className="profile__container">
-                <Tabs active={tabActive} tabs={mock.userTabs} changeTab={onChangeTab}>
+                <Tabs noGrid active={tabActive} tabs={mock.userTabs} changeTab={onChangeTab}>
                     {tabActive === 0 && <Profile user={user} />}
                     {tabActive === 1 && <Suspense fallback={<div>Loading...</div>}><Plans /></Suspense>}
                     {tabActive === 2 && <Suspense fallback={<div>Loading...</div>}><Billing /></Suspense>}

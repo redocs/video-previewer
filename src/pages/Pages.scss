@@ -47,6 +47,10 @@
         margin-left: 20px;
         padding-top: 9px;
     }
+
+    @media screen and (max-width: 850px) {
+        grid-template-columns: minmax(400px, 500px) 1fr;
+    }
 }
 
 .page__actions {
@@ -63,4 +67,12 @@
     grid-template-columns: repeat(4, minmax(100px, 300px));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    @media screen and (max-width: 1140px) {
+        grid-template-columns: repeat(3, minmax(100px, 300px));
+    }
+
+    @media screen and (max-width: 850px) {
+        grid-template-columns: repeat(2, minmax(100px, 300px));
+    }
 }

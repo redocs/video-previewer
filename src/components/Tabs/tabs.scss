@@ -4,6 +4,15 @@
         margin: 0 0 29px;
         padding: 0;
         display: flex;
+
+        @media screen and (max-width: 850px) {
+            &:not(.nogrid) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 5px;
+            }
+        }
+
         li {
             cursor: pointer;
             font-size: 15px;
