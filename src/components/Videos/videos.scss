@@ -18,11 +18,12 @@
     img {
         width: 100%;
         border-radius: 6px;
+        height: auto;
     }
 
     h2 {
         margin: 5px 0 11px;
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--secondary-font-family);
         font-weight: 400;
         font-size: 16px;
         color: var(--text-primary-color);

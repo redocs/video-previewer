@@ -12,7 +12,7 @@ const Header = props => {
 
     return <header className="header">
         <div className="header__logo">
-            <Link to='/'><img src={logo} alt="logo" /></Link>
+            <Link to='/'><img src={logo} alt="logo" width={34} height={35} /></Link>
         </div>
         {menu && <div className="header__menu">
             {['create', 'saved'].map(item => <NavLink
@@ -31,7 +31,7 @@ const Header = props => {
         </div>}
         {menu && <div className="header__user">
             <Link to='/user'>
-                <img src={user} alt="User" />
+                <img src={user} alt="User" width={46} height={46} />
             </Link>
         </div>}
     </header>

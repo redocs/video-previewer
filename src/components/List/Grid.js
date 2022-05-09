@@ -14,7 +14,7 @@ const Grid = props => {
     return <div className='grid'>
         {data.map((item, i) => {
             return <div key={i} onClick={() => { _onSelect(i) }} className={cn('grid__item', { 'active': active === i })}>
-                <img alt={item.name} src={item.image} />
+                <img alt={item.name} src={item.image} width={150} height={85} />
                 <h2>{item.name}</h2>
             </div>
         })}

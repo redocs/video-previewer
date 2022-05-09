@@ -1,11 +1,22 @@
+import WebFont from 'webfontloader';
 import mock from "../../mock/mock";
 import { Check, False } from "../../components/Icons";
 import { Button } from "../../components/Button";
 import cn from 'classnames';
+import { useEffect } from "react";
 
 const Plans = () => {
 
     // Plans Sub Page
+
+    // ! Only here for a Title we add a Third Font Family, i think is an error
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Inter:600']
+          }
+        });
+      }, []);
 
     // TODO API Call for Plans
     const plans = mock.plans;

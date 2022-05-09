@@ -13,11 +13,11 @@ const Preview = props => {
 
     return <div className="preview">
         <div className="preview__actor">
-            <img alt="preview Actor" src={image} />
+            <img alt="preview Actor" src={image} width={700} height={394} />
             <span className="preview__label">Preview</span>
         </div>
         <div className="preview__info">
-            <textarea onChange={_onChangeText} className="preview__text" rows="6" cols="50" defaultValue={text} />
+            <textarea aria-label='Preview Text' onChange={_onChangeText} className="preview__text" rows="6" cols="50" defaultValue={text} />
             <div className="preview__button">
                 <Button text="Listen" />
             </div>

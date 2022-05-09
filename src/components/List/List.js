@@ -15,10 +15,10 @@ const List = props => {
     return <div className='list'>
         {data.map((item, i) => {
             return <div key={i} onClick={() => { _onSelect(i) }} className={cn('list__item', { 'active': active === i })}>
-                <div className='play'><img src={play} alt='Play' /></div>
+                <div className='play'><img src={play} alt='Play' width={40} height={40} /></div>
                 <div>
                     <h2>{item.name}</h2>
-                    <img alt={item.name} src={item.image} />
+                    <img alt={item.name} src={item.image} width={377} height={37} />
                 </div>
             </div>
         })}

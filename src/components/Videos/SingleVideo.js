@@ -11,7 +11,7 @@ const SingleVideo = props => {
 
     return <div className="video">
         <Menu onClick={() => { console.log('open Menu') }} />
-        <img src={imageVideo} alt={video.title} />
+        <img src={imageVideo} alt={video.title}  width={276} height={155} />
         <h2>{video.title}</h2>
         <div className="video__tags">
             {video.tags.map(tag => <Pills key={tag} text={tag} />)}

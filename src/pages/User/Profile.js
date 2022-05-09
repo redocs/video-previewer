@@ -13,7 +13,7 @@ const Profile = props => {
 
     return <div className="profile">
         <div className="profile__image">
-            <img src={profileImage} alt='User' />
+            <img src={profileImage} alt='User'  width={100} height={100} />
             <div className='profile__image__edit'>
                 <Edit fill="#3860ad" />
             </div>

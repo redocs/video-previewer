@@ -1,12 +1,23 @@
+import WebFont from 'webfontloader';
 import { useNavigate } from "react-router-dom";
 import Title from '../../components/Title';
 import { Button } from '../../components/Button';
 import { SingleVideo } from '../../components/Videos';
 import { useStateValue } from '../../state';
+import { useEffect } from "react";
 
 const Saved = props => {
 
     // * Saved Page
+
+    // * We decide to use webfontloader because Roboto is called only in 1 page
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Roboto:400']
+          }
+        });
+      }, []);
 
     const [{ videos }] = useStateValue();
 
