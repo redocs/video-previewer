@@ -31,7 +31,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 999em;
-            background-color: #ebf2ff;
+            background-color: var(--background-color);
             cursor: pointer;
         }
     }
@@ -58,7 +58,7 @@
     h2 {
         font-size: 22px;
         font-weight: 600;
-        color: #222;
+        color: var(--text-primary-color);
         margin: 0 0 20px;
     }
 
@@ -70,14 +70,14 @@
         &.active {
             padding: 21px 24px 28px;
             border-radius: 10px;
-            background-color: #46b13d;
-            color: #fff;
+            background-color: var(--green);
+            color: var(--white);
             margin-top: -30px;
             h2 {
-                color: #fff;
+                color: var(--white);
             }
             .plans__options {
-                color: #fff;
+                color: var(--white);
             }
         }
     }
@@ -88,7 +88,7 @@
         padding: 0;
         font-size: 14px;
         font-weight: 500;
-        color: #333;
+        color: var(--dark-gray);
 
         li {
             margin-bottom: 14px;
@@ -101,7 +101,6 @@
 
     &__price {
         opacity: 0.96;
-        font-family: Poppins;
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 11px;
@@ -118,7 +117,7 @@
         th {
             text-align: left;
             padding: 20px 40px 20px 0;
-            color: #222;
+            color: var(--text-primary-color);
             font-size: 15px;
             font-weight: 500;
         }
@@ -128,7 +127,7 @@
             font-weight: 600;
             padding-top: 12px;
             padding-bottom: 12px;
-            background-color: #fff;
+            background-color: var(--white);
         }
     }
 }

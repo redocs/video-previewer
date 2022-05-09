@@ -11,17 +11,26 @@ import { useStateValue } from '../../state';
 import mock from '../../mock/mock';
 import { Button } from '../../components/Button';
 
+// We Use React.lazy for import the components that are called after a click on a Tab
+// We don't need to import List, Align, and Accordion before the are clicking this
+
 const List = React.lazy(() => import('../../components/List/List'));
 const Align = React.lazy(() => import('../../components/List/Align'));
 const Accordion = React.lazy(() => import('../../components/Accordion'));
 
 const Create = props => {
 
+    // * Create Page
+
     const navigate = useNavigate();
     const [{ title, previewer, tabs, videos }, dispatch] = useStateValue();
 
     const previewActor = mock.actors[previewer.actor];
     const mockTabs = mock.tabs;
+
+    // All the information are update on changing Value
+
+    // For the Title we update the Info only when the user click on Save
 
     const onSubmitTitle = e => {
         // console.log('onSubmitTitle', { e });

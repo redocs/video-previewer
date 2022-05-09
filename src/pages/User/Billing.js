@@ -1,8 +1,11 @@
 import mock from "../../mock/mock";
 import { Invoice } from "../../components/Icons";
 
-const Billing = props => {
+const Billing = () => {
 
+    // Billing Sub Page
+
+    // TODO API Call for the User Info
     const mockTableHeader = mock.table.header;
     const mockTableData = mock.table.data;
 

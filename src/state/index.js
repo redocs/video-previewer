@@ -1,3 +1,6 @@
+// * StateProvider
+// The State Management using createContext and useContext
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 export const StateContext = createContext();

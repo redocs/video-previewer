@@ -22,7 +22,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-size: 22px;
-        color: #222;
+        color: var(--text-primary-color);
         margin: 0;
         padding: 0;
     }
@@ -55,16 +55,16 @@
         padding: 0;
         font-size: 22px;
         font-weight: 500;
-        color: #3860ad;
+        color: var(--text-secondary-color);
         border-radius: 0;
         border: none;
-        border-bottom: 1px solid #b3caf6;
+        border-bottom: 1px solid var(--blue-light);
         font-family: "Poppins", sans-serif;
         &:focus-visible,
         &:focus {
             outline: none;
             border: none;
-            border-bottom: 1px solid #3860ad;
+            border-bottom: 1px solid var(--text-secondary-color);
         }
     }
 
@@ -72,9 +72,9 @@
         margin-top: 21px;
         border-radius: 0;
         border: none;
-        border-bottom: 1px solid #3860ad;
+        border-bottom: 1px solid var(--text-secondary-color);
         font-family: "Poppins", sans-serif;
-        color: #666;
+        color: var(--gray);
     }
 
     .tagselector {
@@ -94,8 +94,8 @@
             padding: 6px 20px;
             border: none;
             border-radius: 6px;
-            background-color: #46b13d;
-            color: #fff;
+            background-color: var(--green);
+            color: var(--white);
             line-height: 21px;
             cursor: pointer;
             display: inline-block;

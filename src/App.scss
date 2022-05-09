@@ -1,12 +1,12 @@
 .App {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   margin: 39px 0 40px;
   display: grid;
   grid-template-columns: 102px 1fr;
   // height: calc(100vh - (79px));
 
   a {
-    color: #3860ad;
+    color: var(--text-secondary-color);
     font-weight: 500;
     text-decoration: none;
   }

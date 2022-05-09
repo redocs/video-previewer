@@ -11,6 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const { initialState, reducer } = appStore();
 
+// We use 2 provider
+// * StateProvider for connect the App with a Store
+// * BrowserRouter for React Router Navigation
+
 root.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>

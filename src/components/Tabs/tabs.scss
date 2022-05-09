@@ -14,7 +14,7 @@
                 margin: 0;
             }
             &.active {
-                color: #3860ad;
+                color: var(--text-secondary-color);
             }
         }
     }

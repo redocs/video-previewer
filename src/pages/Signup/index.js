@@ -8,6 +8,9 @@ import { useStateValue } from '../../state';
 
 const Signup = props => {
 
+    // * Signup Page
+    // The form send the information to the State with the dispatch addUser and navigate to Create
+
     const [{ user }, dispatch] = useStateValue();
     const navigate = useNavigate();
 

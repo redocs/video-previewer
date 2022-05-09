@@ -12,6 +12,8 @@ function App() {
 
   const [{ user }] = useStateValue();
 
+  // we use a fake Login checking the user information. 
+
   if (!user.email) {
     return <div className="App">
       <Header menu={false} />

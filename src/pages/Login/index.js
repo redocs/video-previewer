@@ -6,7 +6,10 @@ import { Button } from '../../components/Button';
 import Title from '../../components/Title';
 import { useStateValue } from '../../state';
 
-const Login = props => {
+const Login = () => {
+
+    // * Login Page
+    // The form send the information to the State with the dispatch addUser and navigate to Create
 
     const [{ user }, dispatch] = useStateValue();
     const navigate = useNavigate();

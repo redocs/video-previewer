@@ -1,7 +1,7 @@
 .preview {
     padding: 20px;
     border-radius: 20px;
-    background-color: #f4f4f4;
+    background-color: var(--background-video);
     // min-width: 740px;
     &__actor {
         position: relative;
@@ -25,14 +25,14 @@
 
         font-size: 15px;
         font-weight: 500;
-        color: #3860ad;
+        color: var(--text-secondary-color);
     }
 
     &__info {
         margin: 18px 0 0;
         padding: 19px 34px 13px 30px;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: var(--white);
 
         font-size: 16px;
         line-height: 1.63;

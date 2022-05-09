@@ -3,10 +3,14 @@ import { Check, False } from "../../components/Icons";
 import { Button } from "../../components/Button";
 import cn from 'classnames';
 
-const Plans = props => {
+const Plans = () => {
 
+    // Plans Sub Page
+
+    // TODO API Call for Plans
     const plans = mock.plans;
 
+    // TODO API Call for the User Info
     const current = 2;
 
     return <div className="plans">

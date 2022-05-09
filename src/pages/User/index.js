@@ -1,16 +1,26 @@
+import React, { Suspense } from 'react';
 import { useNavigate } from "react-router-dom";
 import Title from "../../components/Title";
 import { Button } from "../../components/Button";
 import Tabs from "../../components/Tabs";
 import Profile from "./Profile";
-import Plans from "./Plans";
-import Billing from "./Billing";
+// import Plans from "./Plans";
+// import Billing from "./Billing";
 import mock from "../../mock/mock";
 import { useState } from "react";
 import { useStateValue } from "../../state";
 import './user.scss';
 
-const User = props => {
+// We use React.lazy for optimize performance
+// Maybe <Suspense> need a Skeleton Loading Component
+
+const Plans = React.lazy(() => import('./Plans'));
+const Billing = React.lazy(() => import('./Billing'));
+
+const User = () => {
+
+    // * User Page
+    // We create subPages for the Tab Navigation
 
     const navigate = useNavigate();
 
@@ -41,8 +51,8 @@ const User = props => {
             <div className="profile__container">
                 <Tabs active={tabActive} tabs={mock.userTabs} changeTab={onChangeTab}>
                     {tabActive === 0 && <Profile user={user} />}
-                    {tabActive === 1 && <Plans />}
-                    {tabActive === 2 && <Billing />}
+                    {tabActive === 1 && <Suspense fallback={<div>Loading...</div>}><Plans /></Suspense>}
+                    {tabActive === 2 && <Suspense fallback={<div>Loading...</div>}><Billing /></Suspense>}
                 </Tabs>
             </div>
         </div>

@@ -5,8 +5,10 @@ import { Edit } from '../../components/Icons';
 
 const Profile = props => {
 
-    const { user } = props;
+    // Profile Sub Page
 
+    // TODO API Call for the User Info
+    const { user } = props;
     const profileImage = mock.user.image;
 
     return <div className="profile">

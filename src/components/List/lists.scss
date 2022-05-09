@@ -15,17 +15,17 @@
             margin: -2px 0 0;
             font-size: 12px;
             font-weight: 500;
-            color: #666;
+            color: var(--gray);
             text-align: center;
             line-height: 1;
             padding: 0;
         }
         &.active {
             img {
-                border-color: #3860ad;
+                border-color: var(--text-secondary-color);
             }
             h2 {
-                color: #3860ad;
+                color: var(--text-secondary-color);
             }
         }
     }
@@ -42,7 +42,7 @@
         align-items: center;
 
         &.active {
-            border: solid 1px #3860ad;
+            border: solid 1px var(--text-secondary-color);
             background-color: #ebf2ff;
         }
 
@@ -61,7 +61,7 @@
             margin: 10px 0 -4px;
             font-size: 12px;
             font-weight: 500;
-            color: #666;
+            color: var(--gray);
             text-align: left;
             line-height: 1;
             padding: 0;
@@ -88,10 +88,10 @@
         justify-content: center;
 
         &.active {
-            border: solid 1px #3860ad;
+            border: solid 1px var(--text-secondary-color);
             background-color: #ebf2ff;
             span {
-                color: #3860ad;
+                color: var(--text-secondary-color);
             }
         }
 

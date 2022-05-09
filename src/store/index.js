@@ -1,5 +1,7 @@
+// * appStore
+// We use this file for create all the State to share in the App
+
 export const appStore = () => {
-  // console.log({userInformation});
   const initialState = {
     title: {
       title: 'Saying Hi to my customers',

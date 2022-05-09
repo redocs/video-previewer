@@ -10,13 +10,13 @@
     border: none;
     cursor: pointer;
     &.primary {
-        background-color: #46b13d;
-        color: #fff;
+        background-color: var(--green);
+        color: var(--white);
     }
     &.big {
         background-color: #ebf2ff;
         font-size: 16px;
-        color: #3860ad;
+        color: var(--text-secondary-color);
         padding: 12px;
     }
     &.big-disabled {
@@ -46,7 +46,7 @@
         margin: 0;
     }
     > span {
-        background: #fff;
+        background: var(--white);
         padding: 3px 13px;
         border-radius: 6px;
         border: solid 1px #999;
@@ -57,8 +57,8 @@
 
     &.checked {
         > span {
-            border-color: #3860ad;
-            color: #3860ad;
+            border-color: var(--text-secondary-color);
+            color: var(--text-secondary-color);
         }
     }
 }
