@@ -41,6 +41,18 @@ i.icon {
                 left: 4px;
             }
         }
+        &.big {
+            &.down, &.up {
+                &::before,
+                &::after {
+                    width: 8px;
+                    height: 1.5px;   
+                }
+                &::after {
+                    left: 5px;
+                }
+            }
+        }
     }
 
 
@@ -79,7 +91,7 @@ i.icon {
 .iconMenu {
     width: 60px;
     height: 60px;
-    margin: 0 0 20px;
+    margin: 0 0 21px;
     padding: 0;
     border-radius: 10px;
     background-color: transparent;

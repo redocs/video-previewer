@@ -28,7 +28,7 @@ const Accordion = props => {
                 {isActive && <>
                     <div className="accordion__title">
                         <h2>{item.type}</h2>
-                        <Arrow direction='up' onClick={() => { }} />
+                        <Arrow direction='up' size='big' onClick={() => { }} />
                     </div>
                     <div>
                         <Grid active={active} data={item.items} onSelect={_onSelect} />
@@ -37,7 +37,7 @@ const Accordion = props => {
                 {!isActive && <>
                     <div className="accordion__title">
                         <h2>{item.type}</h2>
-                        <Arrow direction='down' onClick={() => { }} />
+                        <Arrow direction='down' size='big' onClick={() => { }} />
                     </div>
                 </>}
             </div>

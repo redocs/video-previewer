@@ -1,5 +1,5 @@
 .page {
-    padding: 0 38px;
+    padding: 0 29px;
 
     &.login::after {
         content: "";
@@ -45,10 +45,12 @@
     }
     &__choice {
         margin-left: 20px;
+        padding-top: 9px;
     }
 }
 
 .page__actions {
+    margin-right: 17px;
     button {
         margin-left: 20px;
     }

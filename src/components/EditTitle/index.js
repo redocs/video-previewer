@@ -53,8 +53,8 @@ const EditTitle = props => {
         </div>}
         {isEdit && <div className='title__edit'>
             <form onSubmit={submitTitle} className='form__title'>
-                <input type="text" name="title" value={formValue.title} onChange={(e) => { handleForm('title', e) }} />
-                <textarea type="text" name="text" value={formValue.text} onChange={(e) => { handleForm('text', e) }} />
+                <input type="text" name="title" defaultValue={formValue.title} onChange={(e) => { handleForm('title', e) }} />
+                <textarea type="text" name="text" defaultValue={formValue.text} onChange={(e) => { handleForm('text', e) }} />
                 <div className='tagselector'>
                     {tagOption.map((tag, i) => {
                         const checked = !!formValue.tags.find(item => item === tag);

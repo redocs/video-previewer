@@ -20,14 +20,14 @@ const Profile = props => {
             <form>
                 <div className='row'>
                     <Input
-                        label='Full name'
-                        name='fullname'
+                        label='First Name'
+                        name='firstname'
                         type='text'
                         theme='black'
                         value={user.name}
                     />
                     <Input
-                        label='Last name'
+                        label='Last Name'
                         name='lastname'
                         type='text'
                         theme='black'
@@ -35,7 +35,7 @@ const Profile = props => {
                 </div>
                 <div className='row'>
                     <Input
-                        label='Email address'
+                        label='Email'
                         name='email'
                         type='email'
                         theme='black'

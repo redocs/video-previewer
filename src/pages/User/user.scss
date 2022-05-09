@@ -1,14 +1,18 @@
 .profile__container {
     border-top: 1px solid rgb(0 0 0 / 10%);
     padding-top: 28px;
+    .tabs__menu {
+        margin-left: 9px;
+    }
 }
 
 .profile {
     margin-top: 45px;
+    margin-left: 9px;
 
     &__image {
         max-width: 100px;
-        margin-bottom: 43px;
+        margin-bottom: 36px;
         position: relative;
 
         img {
@@ -17,8 +21,8 @@
 
         &__edit {
             position: absolute;
-            top: 50%;
-            right: -50px;
+            top: 46%;
+            right: -52px;
             transform: translateY(-50%);
 
             width: 32px;
