@@ -2,7 +2,7 @@
     label {
         font-size: 14px;
         text-align: left;
-        color: #000;
+        color: var(--black);
         width: 360px;
         display: flex;
         flex-direction: column;
@@ -26,14 +26,14 @@
             padding: 9px 15px 8px 15px;
             border-radius: 6px;
             
-            border: solid 1px #999;
+            border: solid 1px var(--text-button);
 
-            font-family: "Poppins", sans-serif;
+            font-family: var(--font-family);
             font-size: 15px;
             font-weight: 500;
             color: var(--dark-gray);
             &:focus {
-                border-color: #5c90f3;
+                border-color: var(--focus-color);
                 outline: none;
             }
         }
@@ -41,7 +41,7 @@
     }
     &.black {
         input {
-            border-color: #000;
+            border-color: var(--black);
         }
     }
 }

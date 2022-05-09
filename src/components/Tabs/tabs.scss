@@ -8,7 +8,7 @@
             cursor: pointer;
             font-size: 15px;
             font-weight: 500;
-            color: #999;
+            color: var(--text-button);
             margin-right: 30px;
             &:last-child {
                 margin: 0;

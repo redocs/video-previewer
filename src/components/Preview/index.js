@@ -4,7 +4,12 @@ import './preview.scss';
 
 const Preview = props => {
 
-    const { image } = props;
+    const { image, onChangeText, text } = props;
+
+    const _onChangeText = (e) => {
+        // console.log('onChangeText', { e });
+        onChangeText(e.target.value)
+    }
 
     return <div className="preview">
         <div className="preview__actor">
@@ -12,9 +17,7 @@ const Preview = props => {
             <span className="preview__label">Preview</span>
         </div>
         <div className="preview__info">
-            <div>
-                Type or paste your videoscript here. You can also request a translation of an English script to any of 27 other languages
-            </div>
+            <textarea onChange={_onChangeText} className="preview__text" rows="6" cols="50" defaultValue={text} />
             <div className="preview__button">
                 <Button text="Listen" />
             </div>
@@ -25,10 +28,13 @@ const Preview = props => {
 
 Preview.propTypes = {
     image: PropTypes.string,
+    text: PropTypes.string,
+    onChangeText: PropTypes.func
 }
 
 Preview.defaultProps = {
-    image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+    image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==',
+    onChangeText: () => {}
 }
 
 export default Preview;

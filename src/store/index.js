@@ -9,6 +9,7 @@ export const appStore = () => {
       tags: ['Email']
     },
     previewer: {
+      text: 'Type or paste your videoscript here. You can also request a translation of an English script to any of 27 other languages',
       actor: 1,
       voice: 0,
       alignment: 1,

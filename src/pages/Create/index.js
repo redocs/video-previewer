@@ -18,7 +18,7 @@ const List = React.lazy(() => import('../../components/List/List'));
 const Align = React.lazy(() => import('../../components/List/Align'));
 const Accordion = React.lazy(() => import('../../components/Accordion'));
 
-const Create = props => {
+const Create = () => {
 
     // * Create Page
 
@@ -37,6 +37,13 @@ const Create = props => {
         dispatch({
             type: 'addTitle',
             title: e
+        });
+    }
+
+    const onChangePreviewText = e => {
+        dispatch({
+            type: 'editPreview',
+            previewer: { ...previewer, text: e }
         });
     }
 
@@ -102,7 +109,7 @@ const Create = props => {
         <div className="page__container">
             <div className='editor'>
                 <div className='editor__preview'>
-                    <Preview image={previewActor.image} />
+                    <Preview text={previewer.text} onChangeText={onChangePreviewText} image={previewActor.image} />
                 </div>
                 <div className='editor__choice'>
                     <Tabs active={tabs.active} tabs={mockTabs} changeTab={onChangeTab}>

@@ -4,14 +4,14 @@
             margin: 0 3px 2px;
             border-bottom: 1px solid rgb(0 0 0 / 10%);
             i.icon__arrow::after, i.icon__arrow::before {
-                background-color: #999;
+                background-color: var(--text-button);
             }
 
         &.active {
             margin: 0 0 5px;
             padding: 16px 14px 13px 15px;
             border-radius: 6px;
-            background-color: #ebf2ff;
+            background-color: var(--background-color);
             border: none;
             .accordion__title {
                 margin-bottom: 15px;
@@ -32,7 +32,7 @@
         > h2 {
             font-size: 14px;
             font-weight: 500;
-            color: #999;
+            color: var(--text-button);
             margin: 0;
             padding: 0;
         }

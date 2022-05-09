@@ -13,7 +13,7 @@ i.icon {
                 position: absolute;
                 width: 6px;
                 height: 1px;
-                background: #000;
+                background: var(--black);
                 content: "";
                 transform: rotateZ(45deg);
                 top: 5px;
@@ -30,7 +30,7 @@ i.icon {
                 position: absolute;
                 width: 6px;
                 height: 1px;
-                background: #000;
+                background: var(--black);
                 content: "";
                 transform: rotateZ(-45deg);
                 top: 5px;
@@ -65,7 +65,7 @@ i.icon {
             width: 4px;
             height: 4px;
             border-radius: 999em;
-            background: #000;
+            background: var(--black);
             position: absolute;
             top: 8px;
             right: 2px;
@@ -76,7 +76,7 @@ i.icon {
                 width: 4px;
                 height: 4px;
                 border-radius: 999em;
-                background: #000;
+                background: var(--black);
                 position: absolute;
                 right: 6px;
             }
@@ -100,6 +100,6 @@ i.icon {
     justify-content: center;
 
     &.active {
-        background-color: #ebf2ff;
+        background-color: var(--background-color);
     }
 }

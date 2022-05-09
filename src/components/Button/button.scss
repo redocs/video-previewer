@@ -1,9 +1,9 @@
 .button {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-family);
     padding: 6px 20px;
     border-radius: 6px;
-    background-color: #f1f1f1;
-    color: #999;
+    background-color: var(--background-button);
+    color: var(--text-button);
     font-size: 14px;
     line-height: 21px;
     font-weight: 600;
@@ -14,7 +14,7 @@
         color: var(--white);
     }
     &.big {
-        background-color: #ebf2ff;
+        background-color: var(--background-color);
         font-size: 16px;
         color: var(--text-secondary-color);
         padding: 12px;
@@ -22,13 +22,13 @@
     &.big-disabled {
         padding: 9px 30px;
         background-color: transparent;
-        color: #1c7714;
+        color: var(--dark-green);
         font-size: 20px;
         width: 100%;
     }
     &.light-error {
         background-color: transparent;
-        color: #ee6363;
+        color: var(--red);
         font-size: 15px;
         font-weight: 500;
     }
@@ -49,9 +49,9 @@
         background: var(--white);
         padding: 3px 13px;
         border-radius: 6px;
-        border: solid 1px #999;
+        border: solid 1px var(--text-button);
         font-size: 14px;
-        color: #999;
+        color: var(--text-button);
         cursor: pointer;
     }
 
@@ -67,9 +67,9 @@
     background: transparent;
     padding: 3px 13px 2px;
     border-radius: 6px;
-    border: solid 1px #999;
+    border: solid 1px var(--text-button);
     font-size: 12px;
-    color: #999;
+    color: var(--text-button);
     margin: 0 2px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--secondary-font-family)
 }

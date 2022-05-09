@@ -19,7 +19,7 @@
         // }
     }
     h1 {
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-family);
         font-weight: 500;
         font-size: 22px;
         color: var(--text-primary-color);
@@ -59,7 +59,7 @@
         border-radius: 0;
         border: none;
         border-bottom: 1px solid var(--blue-light);
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-family);
         &:focus-visible,
         &:focus {
             outline: none;
@@ -73,8 +73,12 @@
         border-radius: 0;
         border: none;
         border-bottom: 1px solid var(--text-secondary-color);
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-family);
         color: var(--gray);
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .tagselector {

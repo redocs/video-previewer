@@ -16,7 +16,7 @@
     &__label {
         padding: 6px 20px;
         border-radius: 6px;
-        background-color: #ebf2ff;
+        background-color: var(--background-color);
         position: absolute;
         bottom: 27px;
         margin: 0 auto;
@@ -36,7 +36,7 @@
 
         font-size: 16px;
         line-height: 1.63;
-        color: #999;
+        color: var(--text-button);
         min-height: 155px;
 
         display: flex;
@@ -45,11 +45,27 @@
         position: relative;
     }
 
+    &__text {
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.63;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--text-button);
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
     .count_char {
         opacity: 0.3;
         font-size: 10px;
         text-align: right;
-        color: #999;
+        color: var(--text-button);
         position: absolute;
         bottom: 7px;
         right: 17px;
